@@ -1,0 +1,21 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/heroku-deploy@v3.12.12
+      with:
+       heroku_api_key: ${{secret.HEROKU_API_KEY}}
+       heroku_app_name: "embmicalc"
+       heroku_email: "emedu442@gmail.com"
+         
