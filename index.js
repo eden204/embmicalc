@@ -3,7 +3,9 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const urlEncodedParser = bodyParser.urlencoded({ extended: true });
-const port = 3000;
+
+const port = process.env.PORT || 3000;
+
 
 
 app.set('views', 'views');
@@ -66,4 +68,5 @@ app.post('/bmicalculator',urlEncodedParser, function(req, res) {
 
 
 app.listen(port);
-console.log('server is listening on port 3000')
+console.log(`server listening on port ${port}`);
+
