@@ -3,7 +3,10 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const urlEncodedParser = bodyParser.urlencoded({ extended: true });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f81be672bbf2056f41523435c653edd88f02309
 const port = process.env.PORT || 3000;
 
 
@@ -68,5 +71,9 @@ app.post('/bmicalculator',urlEncodedParser, function(req, res) {
 
 
 app.listen(port);
+<<<<<<< HEAD
 console.log(`server listening on port ${port}`);
 
+=======
+console.log('server is listening on port'+ port)
+>>>>>>> 7f81be672bbf2056f41523435c653edd88f02309
