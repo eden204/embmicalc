@@ -1,14 +1,14 @@
 {
-<<<<<<< HEAD
+
   "name": "embmicalc",
-=======
+
   "name": "nodeproj",
->>>>>>> 7f81be672bbf2056f41523435c653edd88f02309
+
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
+
     "test": "jest"
 
   },
@@ -17,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.5.1"
-=======
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -26,6 +26,6 @@
     "body-parser": "^1.19.2",
     "express": "^4.17.3",
     "hbs": "^4.2.0"
->>>>>>> 7f81be672bbf2056f41523435c653edd88f02309
+
   }
 }
